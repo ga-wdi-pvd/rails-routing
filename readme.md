@@ -93,13 +93,23 @@ Note the "root" route and the duplication.  A combination of HTTP Verb (or Metho
 
 ![rails-routes](./images/readme-4.png)
 
-## Named Route Helpers
+## Helpers
+
+### Named Route Helpers
 
 Looking at the output, we see the first column is "Prefix".  Rails provides helpers for referencing these routes in code.  This column provides information about the naming convention for these Named Route Helpers (aka Path Helpers).
 
 ### You Do: Research Named Route Helpers (aka Path and URL Helpers)
 
 Back to the docs... read about [Path Helpers](http://guides.rubyonrails.org/routing.html#path-and-url-helpers)
+
+### Form Helpers
+
+Routes have helpers but so do forms! We're already familiar with the `form_for` but what about `form_tag`?
+
+### You Do: Research Form Helpers
+
+[Start with the docs](http://guides.rubyonrails.org/form_helpers.html)
 
 **Questions**:
 
@@ -129,6 +139,12 @@ prefix + _path = Path Helper
 
 </details>
 
+<details>
+<summary>What are different types of Form Helpers and when are they used?</summary>
+
+> `form_tag` for basic forms and `form_for` to be used with a specific model
+
+</details>
 ---
 
 Looking at this output from `rails routes`,
