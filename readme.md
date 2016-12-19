@@ -101,7 +101,7 @@ Looking at the output, we see the first column is "Prefix".  Rails provides help
 
 ### You Do: Research Named Route Helpers (aka Path and URL Helpers)
 
-Back to the docs... read about [Path Helpers](http://guides.rubyonrails.org/routing.html#path-and-url-helpers)
+Back to the docs... read about [Path Helpers](http://guides.rubyonrails.org/routing.html#path-and-url-helpers), then move on to Google to learn more about Path and URL Helpers
 
 ### Form Helpers
 
@@ -109,7 +109,7 @@ Routes have helpers but so do forms! We're already familiar with the `form_for` 
 
 ### You Do: Research Form Helpers
 
-[Start with the docs](http://guides.rubyonrails.org/form_helpers.html)
+[Start with the docs](http://guides.rubyonrails.org/form_helpers.html), then move onto Google.
 
 **Questions**:
 
