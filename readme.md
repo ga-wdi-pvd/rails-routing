@@ -145,6 +145,7 @@ prefix + _path = Path Helper
 > `form_tag` for basic forms and `form_for` to be used with a specific model
 
 </details>
+
 ---
 
 Looking at this output from `rails routes`,
