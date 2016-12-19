@@ -1,6 +1,6 @@
 # Rails Routing and Resources
 
-## Learning Objectives (5 min)
+## Learning Objectives
 
 * Review the relationship between HTTP requests and Controller actions.
 * Identify the role a router (`routes.rb`) plays in the Rails MVC model.
@@ -11,7 +11,7 @@
 * Describe how path helpers work for nested routes.
 * Implement `form_for` to build a form for a nested resource.
 
-## The Router (5 min)
+## The Router
 
 It's our good ol' friend the Rails rMVC diagram!
 
@@ -29,7 +29,7 @@ It's our good ol' friend the Rails rMVC diagram!
 
 ---
 
-## Routes (10 min)
+## Routes
 
 Clone the [tunr_rails_routes_resources repo](https://github.com/ga-wdi-exercises/tunr_rails_routes_resources).  This provides starter code for this lesson. This repo also contains a solution branch containing all the code we'll be executing today.
 
@@ -71,7 +71,7 @@ root to: "artists#index"
 
 </details>
 
-## What Routes? (10 min)
+## What Routes?
 
 Q: How do we find out what routes our app handles requests for?
 ---
@@ -97,7 +97,7 @@ Note the "root" route and the duplication.  A combination of HTTP Verb (or Metho
 
 Looking at the output, we see the first column is "Prefix".  Rails provides helpers for referencing these routes in code.  This column provides information about the naming convention for these Named Route Helpers (aka Path Helpers).
 
-### You Do: Research Named Route Helpers (aka Path and URL Helpers) (10 min)
+### You Do: Research Named Route Helpers (aka Path and URL Helpers)
 
 Back to the docs... read about [Path Helpers](http://guides.rubyonrails.org/routing.html#path-and-url-helpers)
 
@@ -213,7 +213,7 @@ http://guides.rubyonrails.org/routing.html#generating-paths-and-urls-from-code
 **ProTip**: `params` values are always strings.  ActiveRecord methods (e.g. #find), will convert it to an integer.  This means you can use this in your url `/artists/1-YeahYeahYeahs`.
 
 
-## RESTful Routes (5 min)
+## RESTful Routes
 
 REST attempts to view everything on the web as a Resource. RESTful resources are expected to be managed via specific routes.  Rails makes it easy to generate RESTful routes, via `resources`.
 
@@ -227,19 +227,19 @@ These lines:
 
 Let's review the output of `rails routes`.
 
-## Nested Resources (15 min)
+## Nested Resources
 
-The way our app is currently routed is fine. `Songs` and `artists` have their very own resources and doesn't depend on the other. We can, however, change our domain a bit.  We can make `Songs` depend on their `Artist`. We indicate, and control this, by nesting our resources. We want to be able to visit urls like this:
+The way our app is currently routed is fine. `Songs` and `Artists` have their very own resources and doesn't depend on the other. We can, however, change our domain a bit.  We can make `Songs` depend on their `Artist`. We indicate, and control this, by nesting our resources. We want to be able to visit urls like this:
 
 `http://www.tu.nr/artists/3/songs/12`
 
-* Currently we can visit an `artist` `show` page, which includes a link of all that `artist`'s `songs`.
+* Currently we can visit an `Artist` `show` page, which includes a link of all that `Artist`'s `Songs`.
 
 **Q**. What would it mean to have a URL like that? Why do we do it this way?
 ---
 
 > A.
-  * It concisely reflects our data structure: all `songs` are dependent on an `artist`.
+  * It concisely reflects our data structure: all `Songs` are dependent on an `Artist`.
   * Also allows users to access specific information using the URL.
 
 Ultimately, we want to structure our routes so that all `Songs` exist in the context of a parent `Artist`.
@@ -267,7 +267,7 @@ Exactly!  We need to reference our `Artist` ID separate from our `Song` ID.  Our
 
 ![new-songs-index-and-show](./images/readme-11.png)
 
-## BREAK (10 min)
+## BREAK
 
 Updates to "config/routes.rb"
 
@@ -276,7 +276,7 @@ Updates to "config/routes.rb"
 ![new-routes](./images/readme-13.png)
 
 
-## Let's implement nested routes in Tunr! (60 min)
+## Let's implement nested routes in Tunr!
 
 Okay, so our `routes.rb` file is updated with nested resources. Let's see them in action and fire up our Tunr app!
 
@@ -286,7 +286,7 @@ Okay, so our `routes.rb` file is updated with nested resources. Let's see them i
 
 That's okay. You're going to spend the next hour fixing it!
 
-### TPS: What do we need to change? (3/2, 5 min)
+### Think/Pair/Share: What do we need to change?
 
 * Look through your application and think about what we need to change in order to accommodate our new routing system.
 * Don't worry about solving the problem immediately. Start by identifying files we need to change.
@@ -435,7 +435,7 @@ It seems pretty daunting, but you won't have to change anything beyond link help
 * Strongly encourage you to work with each other on this.
 * The instructors are also here to help.
 
-## BREAK (10 min)
+## BREAK
 
 ## Additional (Optional) Reading
 * [Rails Routing From The Outside In](http://guides.rubyonrails.org/routing.html)
@@ -444,7 +444,7 @@ It seems pretty daunting, but you won't have to change anything beyond link help
 
 Spend the remaining class-time either working on your homework or ask us questions on anything you've learned this week.
 
-## Conclusion
+## Review Questions
 
 - List the routes provided using the `resources :person` method and the associated action for each
 - Why would we nest resource routes?
