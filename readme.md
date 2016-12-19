@@ -459,7 +459,7 @@ It seems pretty daunting, but you won't have to change anything beyond link help
 * [The Lowdown On Routes](https://blog.engineyard.com/2010/the-lowdown-on-routes-in-rails-3)
 * [Scoping Rails Routes](http://notahat.com/2014/02/05/scoping-rails-routes.html)
 
-Spend the remaining class-time either working on your homework or ask us questions on anything you've learned this week.
+Spend the remaining class-time either working on your [homework](https://github.com/ga-wdi-pvd/hogwarts_rails) or ask us questions on anything you've learned during the Rails unit.
 
 ## Review Questions
 
